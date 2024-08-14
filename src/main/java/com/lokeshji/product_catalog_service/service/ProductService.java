@@ -12,4 +12,5 @@ public interface ProductService
 
     Flux<Product> getAllProducts();
 
+    public Mono<Product> getProductById(Long id);
 }

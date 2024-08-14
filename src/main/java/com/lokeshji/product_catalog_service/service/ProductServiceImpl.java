@@ -27,4 +27,9 @@ public class ProductServiceImpl implements ProductService
         return repository.findAll();
     }
 
+    @Override
+    public Mono<Product> getProductById(Long id) {
+        return repository.findById(id);
+    }
+
 }
